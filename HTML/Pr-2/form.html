@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Abhishek Nalla">
+    <meta name="ID" content="2CP319">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="name-container">
+            <h2>Registration Form</h2>
+        </div>
+        <form>
+            <div class="data">
+                <table>
+                    <tr>
+                        <td>Select Academic Year:</td>
+                        <td>
+                            <select required>
+                                    <option value="2020-2021">2020-2021</option>
+                                    <option value="2021-2022">2021-2022</option>
+                                    <option value="2022-2023" selected>2022-2023</option>
+                                </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DOB:</td>
+                        <td><input type="date" name="date" required></td>
+                    </tr>
+                    <tr>
+                        <td>Enter Your Id:</td>
+                        <td><input autofocus type="text" name="id" required></td>
+                    </tr>
+                    <tr>
+                        <td>Enter Your Name:</td>
+                        <td><input type="text" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Enter Your Gender:</td>
+                        <td><input type="radio" id="male" checked name="gender" value="male"><label for="male"> Male</label>
+                            <input type="radio" id="female" name="gender" value="Female"> <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter Your Address:</td>
+                        <td><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Subject:</td>
+                        <td>
+                            <input type="checkbox" id="cn" value="cn"><label for="cn">Computer Networks</label><br>
+                            <input type="checkbox" id="coa" value="coa"><label for="coa">Data Structure</label><br>
+                            <input type="checkbox" id="web" value="Web"><label for="web">Web Technologies</label><br>
+                            <input type="checkbox" id="math" value="math"><label for="math">Maths</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Your Fees:</td>
+                        <td><input type="text" name="fee" value="₹ 1500/-" disabled></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> <input type="submit" value="Submit">
+                            <input type="Reset" value="Reset"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

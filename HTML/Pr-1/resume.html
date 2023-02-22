@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Abhishek Nalla">
+    <meta name="ID" content="2CP319">
+    <title>Resume</title>
+    <style>
+    body{
+        background-color: lightgray;
+        animation-name: bg;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes bg {
+    /* from {background-color:darkslategrey;} */
+    /* to {background-color: lightslategray;} */
+    }
+    ::selection{
+        background: gray;
+        color: snow;
+    }
+    html{
+           scroll-behavior: smooth;
+    }
+    *{
+        font-family: sans-serif;
+    }
+      .container{
+          background-color: white;
+          width: 50%;
+          border: 3px solid gray;
+          margin: 50px auto;
+          padding: 20px 50px;
+          box-shadow: 5px 10px 8px #888888;
+      }
+      .inner-container{
+         
+         margin: 20px 0px 30px 0px;
+      }
+      .name-container{
+           text-align: center;
+           margin-top: 20px;
+           border-bottom: 2px solid gray;
+      }
+      img{
+          border-radius: 10px;
+      }
+      .details tr {
+           display: block;
+           font-size: 20px;
+           margin: 10px 0px;
+           }
+           .details{
+               padding: 20px 0px;
+               border-bottom: 2px solid gray;
+           }
+           .intro{
+                 padding: 10px 0px;
+               border-bottom: 2px solid gray;
+           }
+           .intro p{
+               font-size: 20px;
+               text-indent: 20px;
+               line-height: 30px;
+           }
+           .education{
+                padding: 10px 0px;
+                 border-bottom: 2px solid gray;
+           }
+           .education table {
+               width: 100%;
+               text-align: center;
+               margin: 25px auto;
+               font-size: 20px;
+               border-collapse: collapse;
+                 border: 1px solid black;
+                 
+           }
+           .education td,th{
+                 border: 1px solid black;
+                 padding: 10px 0px;
+           }
+           .skills li{
+               font-size: 20px;
+               margin: 10px 0px;
+           }
+           .projects dd{
+               font-size: 20px;
+               margin: 10px 0px;
+           }
+           .projects dt{
+               font-weight: bold;
+               font-size: 20px;
+               margin: 10px 0px;
+           }
+            @keyframes imgrotate {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+    </style>
+</head>
+
+<body>
+    <div class='container'>
+        <div class="inner-container">
+            <div class="name-container">
+                <img src="avatar.png" width="150px" style="box-shadow: 5px 10px 8px #888888;border-radius: 50%;">
+                <h2>Abhishek Nalla</h2>
+
+            </div>
+            <div class="details">
+                <h2>
+                    <u>Personal details</u>
+                </h2>
+                <p>
+                    <table>
+                        <tr>
+                            <td>Mobile No : </td>
+                            <td>8456359845</td>
+                        </tr>
+                        <tr>
+                            <td>Age : </td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td>College : </td>
+                            <td>Birla Vishvakarma Mahavidyalaya</td>
+                        </tr>
+                        <tr>
+                            <td>DOB : </td>
+                            <td>30/09/2003</td>
+                        </tr>
+                        <tr>
+                            <td>Email : </td>
+                            <td><a href="mailto:nallaabhi2003@gmail.com">nallaabhi2003@gmail.com</a></td>
+                        </tr>
+                    </table>
+                </p>
+
+            </div>
+            <div class="intro">
+                <h2>
+                    <u>Introduction</u>
+                </h2>
+                <p>
+                    Hey there, I am Abhishek Nalla. I did my Diploma in Informatin Technology. Currently, I'm pursing the B.Tech in Computer Engineering at BVM, Anand.
+                    I'm hard working and highly motivated person. I can adjust in any situation.
+                </p>
+            </div>
+            <div class="education">
+                <h2>
+                    <u>Education Details</u>
+                </h2>
+                <table >
+                    <tr>
+                        <th> Sr No. </th>
+                        <th> Name </th>
+                        <th> Marks </th>
+                    </tr>
+                     <tr>
+                        <td>1</td>
+                        <td>Sunrise Vidyalaya School</td>
+                        <td>77%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Dr S & SS Ghandhy College of Engineering and Technology</td>
+                        <td>9.56 CGPA</td>
+                    </tr>
+                </table>
+            </div>
+             <div class="skills">
+                  <h2>
+                    <u>Skills</u>
+                </h2>
+                 <ul style="list-style-type:disclosure-closed; padding-left: 25px">
+                    <li>Problem Solving</li> 
+                    <li>C++ and C</li>
+                    <li>PHP</li>
+                    <li>phpMyAdmin</li>
+                    <li>Team-Work</li>
+                     <li>Presentation Skills</li>
+                     <li>Coding</li>
+                     <li>Communication</li>
+                 </ul>
+             </div>
+             <div class="projects">
+                <h2>
+                    <u>Projects</u>
+                </h2>
+                <dl>
+                    <dt>E-Ration</dt>
+                        <dd>- E-Ration is a web-protal which is almost Digitalized version of existing Ration System. It is developed in PHP and phpMySQL.</dd>
+                        <dt>Organ Donation</dt>
+                        <dd>- Organ Donation is a website which is used fro donating organs and requesting for the available organ from website. It is developed in asp.net and MySQL.</dd>
+                        <dt>GLiB Notes</dt>
+                        <dd>- GLiB Notes is a website which is used to upload and download the uploaded notes. It is developed in PHP and phpMySQL.</dd>
+                </dl>
+             </div>
+        </div>
+    </div>
+</body>
+</html>

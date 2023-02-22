@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+
+    background: lightskyblue;
+}
+.main-container{
+    background: snow;
+    width: 50%;
+    border: 3px solid darkblue;
+    margin: 50px auto; 
+    border-radius: 10px;
+}
+.name-container{
+    padding: 10px 0px;
+    text-align: center;
+}
+.data{
+    width: 100%;
+    font-size: 15px;
+}
+select{
+    width: 85%;
+    padding: 5px 0px;
+}
+table{
+    width: 90%;
+    margin:20px auto;
+}
+td{
+    padding: 10px 20px;
+}
+input{
+    width: 82%;
+    padding: 5px 0px 5px 10px;
+    display: inline-block;
+}
+label{
+    display: inline-block;
+}
+input[type="radio"],input[type="checkbox"]{
+    width: 10%;
+    display: inline-block;
+}
+textarea{
+    width: 350px;
+    height: 70px;
+}
+input[type="submit"],input[type="reset"]{
+    margin: 10px 30px;
+    width: 40%;
+    display: inline-block;
+    padding: 6px 0px;
+    font-size: 20px;
+    border: solid 1px;
+    border-radius: 10px;
+    background: white;
+    color: black;
+}
+input[type="submit"]:hover{
+    cursor:pointer;
+    color: white;
+    background: green;
+}
+input[type="reset"]:hover{
+    cursor: pointer;
+    color: white;
+    background: green;
+}

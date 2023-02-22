@@ -1,0 +1,30 @@
+body{
+    counter-reset: c1;
+}
+div{
+    margin: 5px;
+    font-size: large;
+}
+.main {
+    margin-bottom: 20px;
+}
+div.chapters::before {
+    counter-increment: c1;
+    content: "Chapter " counter(c1) ": ";
+}
+div.chapters{
+    counter-reset: c2;
+}
+div.w::before {
+    margin-left: 50px;
+    counter-increment: c2;
+    content: counter(c1) "." counter(c2) " ";
+}
+.w{
+    counter-reset: c3;
+}
+div.w2::before{
+    margin-left: 100px;
+    counter-increment: c3;
+    content: counter(c1) "." counter(c2) "." counter(c3) " ";
+}

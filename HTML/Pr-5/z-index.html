@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abhishek Nalla">
+    <meta name="ID" content="2CP319">
+    <title>Z-Index</title>
+    <style>
+        section{
+            margin-left: 200px;
+            width: 500px;
+            position: absolute;
+            left: 160px;
+            top: 70px;
+            font-size: medium;
+        }
+        .div1   {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            padding: 5px 5px;
+            background-color: whitesmoke;
+            left: 20px; 
+            top: 20px; 
+            z-index: 1;
+            border-radius: 5px;
+        }
+        .div2{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            padding: 5px 5px;
+            background-color: whitesmoke;
+            left: 40px; 
+            top: 40px;
+            z-index: 2;
+            border-radius: 5px;
+        }
+        .div3{
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            padding: 5px 5px;
+            background-color: whitesmoke;
+            left: 60px; 
+            top: 60px;
+            z-index: 3;
+            border-radius: 5px;
+        }
+        #box1{
+            left: 0%;
+            right: 30%;
+            margin-top: 100px;
+            margin-left: 50px;
+            position: absolute;
+            height: auto;
+        }
+        .title {
+            background-color: whitesmoke;
+            text-align: center;
+            height: 20px;
+            font-weight: bolder;
+            font-size: larger;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body style="background-color: lightgrey;">
+    <div class="title">
+        Z-Index
+    </div>
+    <section>
+        <div id="box1">
+            <div class="div1">
+                <b>CSS</b> (Cascading Style Sheets) is a programming language used to describe the presentation and formatting of web pages.
+            </div>
+            <div class="div2">
+                <b>JavaScript</b> is a client-side scripting language used primarily to create dynamic and interactive web pages.
+                It is one of the core technologies of the World Wide Web and is supported by all modern web browsers.
+            </div>
+            <div class="div3">
+                <b>PHP</b> (Hypertext Preprocessor) is a server-side scripting language used to develop dynamic web applications and websites.
+                It is a popular choice for web developers because of its ease of use, versatility, and ability to integrate with other 
+                technologies. <br>PHP supports a wide range of platforms and web servers, and can be used with different databases 
+                such as MySQL, PostgreSQL, and SQLite. It also has a large and active community of developers.
+            </div>
+        </div>
+    </section>
+</body>
+</html>

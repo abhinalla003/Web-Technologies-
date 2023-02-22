@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.back {
+  background-color: lightgray;
+  width: 30%;
+  margin: auto;
+  margin-top: 7%;
+  border-radius: 10px;
+}
+.zoom {
+  transition: transform .2s;
+}
+.zoom:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.text {
+  z-index: 1px;
+}
