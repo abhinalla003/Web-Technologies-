@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        input[type=text], input[type=password], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            margin-top: 10%;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+        <form action="action_page.php" method="POST">
+            <center> <label><h2><b>Login Form</b></h2></label></center><br>
+            <label for="uname">User Name</label>
+            <input type="text" id="uname" name="username" placeholder="User name..">
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="pass" placeholder="Password..">
+            <label for="usertype">User Type</label>
+            <select id="usertype" name="usertype">
+            <option value="Client">Client</option>
+            <option value="Manager">Manager</option>
+            <option value="QA Tester">QA Tester</option>
+            </select>
+            <input type="submit"  value="Login">
+        </form>
+        </div>
+    </body>
+</html>
