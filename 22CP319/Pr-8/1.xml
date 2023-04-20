@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="text.xsl"?>
+<!DOCTYPE movie SYSTEM "validate.dtd">
+    <movie xmlns=""
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="movie.xsd">
+        <name>Hello</name>
+        <length>2 hours</length>
+        <actors>15</actors>
+        <directors>World</directors>
+        <year>2023</year>
+        <rating>10</rating>
+    </movie>
+    <movie>
+        <name>World</name>
+        <length>3 hours</length>
+        <actors>10</actors>
+        <directors>Hello</directors>
+        <year>2022</year>
+        <rating>9</rating>
+    </movie>

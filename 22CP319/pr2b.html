@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Practical-2(b)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Abhishek Nalla">
+        <meta name="id" content="22CP319">
+        <meta name="Created On" content="02/02/2023">
+        <style>
+        .outDiv {
+            width: 50%;
+            margin: auto;
+            margin-top: 3%;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: whitesmoke;
+            border-radius: 5px;
+        }
+        .tblFrmt {
+            margin: auto;
+            width: 75%;
+            margin-bottom: 5%
+        }
+        .tblCont {
+            text-align: left;
+        }
+        select {
+            width: 100px;
+        }
+        </style>
+        <!--<link href="css/style.css" rel="stylesheet">-->
+    </head>
+    <body bgcolor="darkseagreen">
+        <div class="outDiv">
+            <b><h1 style="margin-top:5%;">Birla Vishwakarma Mahavidyala</h1></b><br>
+            <h3 style="margin-top: -30px; font-family: monospace">An Autonomous Institute</h3>
+            <h2>Sem-4 Registration Form</h2>
+            <div class="tblCont">
+                <form action="" method="POST">
+                    <table class="tblFrmt" border="5" cellpadding=5>
+                        <tr>
+                            <td>Select Academic Year:</td>
+                            <td class="tdArr">
+                                <select >
+                                    <option value="2016-17">2016-17</option>
+                                    <option value="2016-17">2017-18</option>
+                                    <option value="2016-17">2018-19</option>
+                                    <option value="2016-17">2019-20</option>
+                                    <option value="2016-17">2020-21</option>
+                                    <option value="2016-17">2021-22</option>
+                                    <option value="2016-17">2022-23</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td>
+                                <input type="email" name="email" placeholder="Enter Email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Select Semester:</td>
+                            <td>
+                                <input type="number" min="1" max="8" name="sem" placeholder="Enter Semester" style="width: 50%" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Enter Id:</td>
+                            <td>
+                                <input type="text" name="id" placeholder="Enter Id No" autofocus />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pasword:</td>
+                            <td>
+                                <input type="password" minlength="8" maxlength="18" name="pass" placeholder="Enter Password" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Enter Name:</td>
+                            <td>
+                                <input type="text" name="name" placeholder="Enter Name" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Select Gender:</td>
+                            <td>
+                                <input type="radio" name="gender" value="Male" checked>Male
+                                <input type="radio" name="gender" value="Female">Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Enter Address:</td>
+                            <td>
+                                <textarea rows="3" cols="30" name="add" placeholder="Enter Address"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Subjects:</td>
+                            <td>
+                                <input type="checkbox" name="subject1" value="C++" />C++
+                                <input type="checkbox" name="subject2" value="PHP" />PHP
+                                <input type="checkbox" name="subject3" value="ASP.net" />ASP.net
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fees:</td>
+                            <td>
+                                <input type="number" name="fees" placeholder="Enter Fees" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><input type="submit" name="btnSubmit" value="Submit" style="background-color: grey; color: white" /></td>
+                            <td style="text-align: center;"><input type="reset" name="btnReset" value="Reset" style="background-color: grey; color: white" /></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <iframe src="pr1.html" width="90%">Resume</iframe>
+        </div>
+    </body>
+</html>

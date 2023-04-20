@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pr-5(d)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Abhishek Nalla">
+        <meta name="id" content="22CP319">
+        <meta name="Created On" content="23/02/2023">
+    </head>
+    <body>
+        <script>
+            var low= prompt("Enter Lower Limit?");
+            var high= prompt("Enter Higher Limit?");
+            document.write("Prime Numbers from " + low + " to " + high + " : -<br>");
+            for(var i=low;i<=high;i++)
+            {
+                var tmp=0;
+                for(var j=2;j<i;j++)
+                {
+                    if((i%j)==0)
+                    {
+                        tmp=1;
+                        break;
+                    }
+                }
+                if(tmp!=1)
+                    document.write(i + "<br>");
+            }
+        </script>
+    </body>
+</html>

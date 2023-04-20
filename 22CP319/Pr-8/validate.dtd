@@ -1,0 +1,7 @@
+<!ELEMENT movie (name, length, actors, directors, year, rating)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT length (#PCDATA)>
+<!ELEMENT actors (#PCDATA)>
+<!ELEMENT directors (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
