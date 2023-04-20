@@ -1,0 +1,30 @@
+.box {
+    width: 75%;
+    border: 2px  grey; 
+    border-radius: 10px; 
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 25px;
+    margin: auto;
+    margin-top: 5%;
+}
+.title {
+    font-size: 18px;
+}
+.tbl {
+    margin-top: 1%;
+    font-size: large;
+}
+table {
+    counter-reset: chapters;
+}
+div.chapter::before {
+    counter-increment: chapters;
+    content: "Chapter " counter(chapters) ". ";
+}
+div .std {
+    counter-reset: sections;
+}
+div.section::before {
+    counter-increment: sections;
+    content: counter(chapters) "." counter(sections) " ";
+}

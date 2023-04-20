@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pr-5(c)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Abhishek Nalla">
+        <meta name="id" content="22CP319">
+        <meta name="Created On" content="23/02/2023">
+        <style>
+        .main {
+            margin: auto;
+            font-size: larger;
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+                var n = prompt("Enter the value for fibonacci series?");
+                var f1=0, f2=1, f3=0;
+                if(n=="")
+                {
+                    alert("Not Entered Any value...");
+                }
+                else
+                {
+                    document.write('<div class="main">Fibonacci Series of ' + n + " : " + f1 + ", " + f2 + ", ");
+                    for(var i=2;i<n;i++)
+                    {
+                        f3=f1+f2;
+                        f1=f2;
+                        f2=f3;
+                        document.write(f3 + ", ")
+                    }
+                    document.write("</div>");
+                }
+        </script>
+    </body>
+</html>
